@@ -30,4 +30,22 @@ Win10系统中自带 Windows Defender 杀毒软件，很多人都特别的排斥
 
 ![close-realtime-defender-done-16733382649bh4KZg.png](http://windows-media.knowledge.ituknown.cn/disable_windows_defender/close-realtime-defender-done-16733382649bh4KZg.png)
 
-# 通过修改注册表实现关闭defender安全中心
+# 使用Defender Control工具关闭安全中心
+
+Defender Control 是Github开源的一款小巧精悍的一键开启/关闭Windows Defender工具，目前仅支持Win10和早期的Win11。
+
+仓库地址是：https://github.com/qtkite/defender-control
+
+使用起来特别简单，直接在 [release](https://github.com/qtkite/defender-control/releases) 页面下载 exe 程序即可：
+
+![defender-control-release.png](http://windows-media.knowledge.ituknown.cn/disable_windows_defender/defender-control-release.png)
+
+- disable-defender.exe 用于禁用 Windows Defender
+- enable-defender.exe  用于开启 Windows Defender
+
+下载后右键使用超级管理员运行即可！
+
+|**注意**|
+|:-------|
+|系统默认会将该工具识别为病毒软件，在下载前记得先在设置面板中将“病毒和威胁防护»实时保护”关闭掉！|
+
