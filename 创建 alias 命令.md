@@ -7,11 +7,9 @@ Windows 创建 alias 可以借助批处理脚本（bat）实现。只需要将�
 wsl.exe -d ubuntu %*
 ```
 
-脚本文件名为 ubuntu.bat，加入环境变量之后，只需要在任意命令终端执行 ubuntu.bat 命令就立马启动 ubuntu，及其方便。
+脚本文件名为 ubuntu.bat，加入环境变量之后，只需要在任意命令终端执行 `ubuntu.bat` 命令即可立刻打开 ubuntu，及其方便。
 
-其中，%* 是一个特殊的变量，表示传递给脚本的所有命令行参数。它代表了脚本被调用时传递的所有参数，而不是单个参数。
-
-例如，如果你有一个脚本（比如 myscript.bat），你可以这样调用它：
+其中，`%*` 是一个特殊的变量，表示将所有参数传递给命令。例如，如果你有一个脚本（比如 myscript.bat），你可以这样调用它：
 
 ```bat
 myscript.bat arg1 arg2 arg3
