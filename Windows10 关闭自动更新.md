@@ -15,6 +15,7 @@ Windows10最恶心的地方就是频繁的进行系统自动更新，关又关�
 
 ![Settings_DisableUpdateOptions.png](http://windows-media.knowledge.ituknown.cn/disable_windows_update/DisableSystemUpdateSetting/Settings_DisableUpdateOptions.png)
 
+**特别说明：** 暂停更新日期这里最好选择到最大。
 # 关闭Windows Update服务
 
 按“Windows + R”键，打开运行对话框，输入“services.msc”，回车确认进入系统服务窗口。在弹出的服务窗口中，找到“Windows Update”选项并双击打开：
