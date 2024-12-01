@@ -1,3 +1,6 @@
+Windows 内存压缩（Memory Compression）主要用于优化系统内存使用效率，以减少对硬盘的读取和写入（特别是在内存资源不足时）。使用内存压缩可以避免使用到较多的分页文件，内存的解压操作比分页文件的交换速度快得多，但是也会损耗一些CPU的性能。对于内存小于或等于8g的电脑建议开启，对于大于8g内存的电脑建议关闭。
+
+查看当前内存压缩信息（其中括号中的1.3MB就是已压缩的内存）：
 
 ![task_memory.png](http://windows-media.knowledge.ituknown.cn/memory_compress/task_memory.png)
 
@@ -15,7 +18,7 @@ Get-MMAgent
 ApplicationLaunchPrefetching : True
 ApplicationPreLaunch         : True
 MaxOperationAPIFiles         : 256
-MemoryCompression            : True  < 开启压缩
+MemoryCompression            : True  < 当前已开启内存压缩
 OperationAPI                 : True
 PageCombining                : False
 PSComputerName               :
@@ -25,6 +28,8 @@ PSComputerName               :
 
 ```PowerShell
 Disable-MMAgent -mc
+# 或
+Disable-MMAgent -MemoryCompression
 ```
 
 示例：
@@ -32,6 +37,8 @@ Disable-MMAgent -mc
 ![disable_mmagent.png](http://windows-media.knowledge.ituknown.cn/memory_compress/disable_mmagent.png)
 # 启用内存压缩
 
-```
+```PowerShell
 Enable-MMAgent -mc
+# 或
+Enable-MMAgent -MemoryCompression
 ```
