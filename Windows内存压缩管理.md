@@ -24,7 +24,7 @@ PageCombining                : False
 PSComputerName               :
 ```
 
-# 禁用内存压缩
+# 禁用内存压缩（重启生效）
 
 ```PowerShell
 Disable-MMAgent -mc
@@ -35,7 +35,8 @@ Disable-MMAgent -MemoryCompression
 示例：
 
 ![disable_mmagent.png](http://windows-media.knowledge.ituknown.cn/memory_compress/disable_mmagent.png)
-# 启用内存压缩
+
+# 启用内存压缩（重启生效）
 
 ```PowerShell
 Enable-MMAgent -mc
