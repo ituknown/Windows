@@ -2,7 +2,7 @@ Windows 内存压缩（Memory Compression）主要用于优化系统内存使用
 
 查看当前内存压缩信息（其中括号中的1.3MB就是已压缩的内存）：
 
-![task_memory.png](http://windows-media.knowledge.ituknown.cn/memory_compress/task_memory.png)
+![task_memory.png](https://ituknown.cn/windows-media/memory_compress/task_memory.png)
 
 # 查看内存压缩状态
 
@@ -34,7 +34,7 @@ Disable-MMAgent -MemoryCompression
 
 示例：
 
-![disable_mmagent.png](http://windows-media.knowledge.ituknown.cn/memory_compress/disable_mmagent.png)
+![disable_mmagent.png](https://ituknown.cn/windows-media/memory_compress/disable_mmagent.png)
 
 # 启用内存压缩（重启生效）
 
